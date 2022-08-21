@@ -1,0 +1,15 @@
+.bgpolkadotfooter {
+  padding: 0;
+  margin: 0;
+  background-color: rgb(46, 52, 64);
+  background-image: radial-gradient(gray 2px, transparent 2px);
+  background-size: 60px 60px;
+  /* height: 250px; */
+  height: full;
+  font-family: 'Balsamiq Sans', cursive;
+  background-attachment: fixed;
+}
+
+li {
+  display: inline;
+}
