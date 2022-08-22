@@ -1,9 +1,12 @@
 .bgpolkadot {
   padding: 0;
   margin: 0;
-  background-color: gainsboro;
-  background-image: radial-gradient(snow 2px, transparent 2px);
-  background-size: 60px 60px;
+  /* background-color: #10162f; */
+  /* background-color: #3a10e5; */
+  /* background-color: #ffd300; */
+  background-color: #7aa3b3;
+  /* background-image: radial-gradient(snow 2px, transparent 2px);
+  background-size: 60px 60px; */
   /* height: 735px; */
   height: full;
   font-family: 'Balsamiq Sans', cursive;

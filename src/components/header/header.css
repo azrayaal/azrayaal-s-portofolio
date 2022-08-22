@@ -1,0 +1,11 @@
+.bodyHeader {
+  background-color: #7aa3b3;
+  height: 670px;
+  padding-top: 7.5rem;
+  padding-bottom: 7.5rem;
+}
+
+button {
+  background-color: #ffd300;
+  padding: 10px 30px;
+}
