@@ -36,3 +36,16 @@
     transform: rotate(360deg);
   }
 }
+
+.buttonYellow:hover {
+  background-color: #10162f;
+  color: #ffd300;
+}
+.buttonmap {
+  background-color: #ffd300;
+  /* padding: 10px 30px; */
+}
+.buttonYellowAbout:hover {
+  background-color: #7aa3b3;
+  color: #10162f;
+}

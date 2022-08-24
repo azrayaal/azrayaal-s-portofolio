@@ -1,5 +1,5 @@
 // import React from 'react';
-import '../css/navbar.css';
+import '../../css/navbar.css';
 
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
@@ -40,7 +40,7 @@ export default function Navbaar() {
               <NavDropdown.Item href="https://www.instagram.com/azrayazid.rar/" target="blank">
                 Instagram
               </NavDropdown.Item>
-              <NavDropdown.Item onClick={() => goto(linkref.current)} target="blank">
+              <NavDropdown.Item href="#contact" target="blank">
                 Gmail
               </NavDropdown.Item>
               {/* <NavDropdown.Item href="https://mail.google.com/mail/?view=cm&fs=1&to=azrayazidalkautsar@gmail.com&su=Recruitment" target="blank">

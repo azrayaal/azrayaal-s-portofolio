@@ -8,10 +8,10 @@ export default function Map(props) {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm('service_r9smqqj', 'template_c8vr3o8', form.current, 'kIpaCntvh30RklLJJ').then(
+    emailjs.sendForm('service_r9smqqj', 'template_oswegyi', form.current, 'kIpaCntvh30RklLJJ').then(
       (result) => {
         console.log(result.text);
-        console.log('message sent');
+        alert('message sent');
       },
       (error) => {
         console.log(error.text);
@@ -41,10 +41,8 @@ export default function Map(props) {
             <div class="col-lg-6">
               <form id="contactForm" ref={form} onSubmit={sendEmail}>
                 <div class="form-floating mb-3">
-                  <input class="form-control" id="name" type="text" placeholder="Enter your name..." data-sb-validations="required" />
-                  <label for="name" name="user_name">
-                    Full name
-                  </label>
+                  <input class="form-control" name="from_name" id="name" type="text" placeholder="Enter your name..." data-sb-validations="required" />
+                  <label for="name">Full name</label>
                   <div class="invalid-feedback" data-sb-feedback="name:required">
                     A name is required.
                   </div>
@@ -54,12 +52,12 @@ export default function Map(props) {
                   <label for="email" name="user_email">
                     Email address
                   </label>
-                  <div class="invalid-feedback" data-sb-feedback="email:required">
+                  {/* <div class="invalid-feedback" data-sb-feedback="email:required">
                     An email is required.
                   </div>
                   <div class="invalid-feedback" data-sb-feedback="email:email">
                     Email is not valid.
-                  </div>
+                  </div> */}
                 </div>
                 {/* <div class="form-floating mb-3">
                   <input class="form-control" id="phone" type="tel" placeholder="(123) 456-7890" data-sb-validations="required" />
@@ -69,27 +67,14 @@ export default function Map(props) {
                   </div>
                 </div> */}
                 <div class="form-floating mb-3">
-                  <textarea class="form-control" id="message" type="text" placeholder="Enter your message here..." data-sb-validations="required"></textarea>
-                  <label for="message" name="message">
-                    Message
-                  </label>
-                  <div class="invalid-feedback" data-sb-feedback="message:required">
-                    A message is required.
-                  </div>
-                </div>
-                <div class="d-none" id="submitSuccessMessage">
-                  <div class="text-center mb-3">
-                    <div class="fw-bolder">Form submission successful!</div>
-                    To activate this form, sign up at
-                    <br />
-                    <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
-                  </div>
+                  <textarea name="message" class="form-control" id="message" type="text" placeholder="Enter your message here..." data-sb-validations="required"></textarea>
+                  <label name="message">Message</label>
                 </div>
                 {/* <div class="d-none" id="submitErrorMessage">
                   <div class="text-center text-danger mb-3">Error sending message!</div>
                 </div> */}
                 <div class="d-grid">
-                  <button class="btn btn-light btn-xl bg-warning fw-semibold lead" value="Send" id="submitButton" type="submit">
+                  <button class="btn btn-light btn-xl bg-warning fw-semibold lead" style={{}} value="Send" id="submitButton" type="submit">
                     Submit
                   </button>
                 </div>

@@ -9,7 +9,7 @@ import thumbnail4 from '../../img/thumbnails/quotes-web-app.png';
 export default function Porto2() {
   return (
     <div id="portfolio">
-      <h1 className="text-center p-2" style={{ backgroundColor: '#ffd300' }}>
+      <h1 className="text-center p-2" id="Projects" style={{ backgroundColor: '#ffd300' }}>
         PROJECTS
       </h1>
       <div class="container-fluid p-0">

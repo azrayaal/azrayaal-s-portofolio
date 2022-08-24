@@ -1,12 +1,6 @@
 import React from 'react';
 // import '../footer.css';
-import '../css/footer.css';
-import bootstrap from '../../src/img/bootstrap.png';
-import reactjs from '../../src/img/structure.png';
-import facebook from '../../src/img/fb-removebg-preview.png';
-import linken from '../../src/img/linkedin-icon-logo-png-transparent-removebg-preview.png';
-import github from '../../src/img/logo_github_icon_143196.png';
-import instagram from '../../src/img/instagram.png';
+import '../../css/footer.css';
 
 export default function Footer() {
   return (

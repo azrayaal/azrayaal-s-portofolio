@@ -40,7 +40,7 @@ export default function About() {
               technology, especially computer mathematics, and quantum computers My first program started by calculating age and from there I began to get more interested and make one of my new hobbies. At first it was difficult for me, it
               starts with just learning basic algorithms up to complicated counts, and utilizing quantum computer theory.
             </p>
-            <button class=" mb-5 lead fw-semibold" href="#services">
+            <button class=" mb-5 lead fw-semibold buttonYellowAbout" href="#services">
               Download CV
             </button>
           </Col>

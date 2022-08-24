@@ -51,7 +51,7 @@ export default function Header() {
             <h3 class="pb-5">
               <em>Junior Web Developer</em>
             </h3>
-            <button className="lead fw-semibold" href="#about">
+            <button className="lead fw-semibold buttonYellow" href="#about">
               Find Out More
             </button>
           </Col>
