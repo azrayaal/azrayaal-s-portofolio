@@ -89,6 +89,7 @@
   }
 }
 
-nav {
-  background-color: rgba(168, 167, 189, 0.59);
+.navbar {
+  background-color: #10162f;
+  color: #fff;
 }

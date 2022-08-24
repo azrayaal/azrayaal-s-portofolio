@@ -1,17 +1,30 @@
-import React from 'react';
+import React, { useRef } from 'react';
 // import '../map.css';
-import { Helmet } from 'react-helmet';
+import emailjs from '@emailjs/browser';
 
-export default function Map() {
+export default function Map(props) {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_r9smqqj', 'template_c8vr3o8', form.current, 'kIpaCntvh30RklLJJ').then(
+      (result) => {
+        console.log(result.text);
+        console.log('message sent');
+      },
+      (error) => {
+        console.log(error.text);
+      }
+    );
+  };
+
   return (
     <>
-      <Helmet>
-        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js" crossorigin="anonymous"></script>
-      </Helmet>
-      <section class="page-section py-4  bg-primary " id="contact">
+      <section class="page-section py-4 " id="contact" ref={props.linkRef} style={{ backgroundColor: '#7aa3b3' }}>
         <div class="container px-4 px-lg-5">
           <div class=" text-center py-2">
-            <h2 class="mt-0 text-light">Let's Get In Touch!</h2>
+            <h2 class="mt-0  fw-bold">Let's Get In Touch!</h2>
             <hr class="divider text-white py-1" />
           </div>
           <div class="row gx-4 gx-lg-5 gy-3 mb-5 ">
@@ -26,17 +39,21 @@ export default function Map() {
             </div>
 
             <div class="col-lg-6">
-              <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+              <form id="contactForm" ref={form} onSubmit={sendEmail}>
                 <div class="form-floating mb-3">
                   <input class="form-control" id="name" type="text" placeholder="Enter your name..." data-sb-validations="required" />
-                  <label for="name">Full name</label>
+                  <label for="name" name="user_name">
+                    Full name
+                  </label>
                   <div class="invalid-feedback" data-sb-feedback="name:required">
                     A name is required.
                   </div>
                 </div>
                 <div class="form-floating mb-3">
                   <input class="form-control" id="email" type="email" placeholder="name@example.com" data-sb-validations="required,email" />
-                  <label for="email">Email address</label>
+                  <label for="email" name="user_email">
+                    Email address
+                  </label>
                   <div class="invalid-feedback" data-sb-feedback="email:required">
                     An email is required.
                   </div>
@@ -44,16 +61,18 @@ export default function Map() {
                     Email is not valid.
                   </div>
                 </div>
-                <div class="form-floating mb-3">
+                {/* <div class="form-floating mb-3">
                   <input class="form-control" id="phone" type="tel" placeholder="(123) 456-7890" data-sb-validations="required" />
                   <label for="phone">Phone number</label>
                   <div class="invalid-feedback" data-sb-feedback="phone:required">
                     A phone number is required.
                   </div>
-                </div>
+                </div> */}
                 <div class="form-floating mb-3">
                   <textarea class="form-control" id="message" type="text" placeholder="Enter your message here..." data-sb-validations="required"></textarea>
-                  <label for="message">Message</label>
+                  <label for="message" name="message">
+                    Message
+                  </label>
                   <div class="invalid-feedback" data-sb-feedback="message:required">
                     A message is required.
                   </div>
@@ -66,11 +85,11 @@ export default function Map() {
                     <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
                   </div>
                 </div>
-                <div class="d-none" id="submitErrorMessage">
+                {/* <div class="d-none" id="submitErrorMessage">
                   <div class="text-center text-danger mb-3">Error sending message!</div>
-                </div>
+                </div> */}
                 <div class="d-grid">
-                  <button class="btn btn-light btn-xl disabled" id="submitButton" type="submit">
+                  <button class="btn btn-light btn-xl bg-warning fw-semibold lead" value="Send" id="submitButton" type="submit">
                     Submit
                   </button>
                 </div>

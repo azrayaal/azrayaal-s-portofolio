@@ -1,71 +1,58 @@
-import React from 'react';
+// import React from 'react';
 import '../css/navbar.css';
 
-export default function Navbar() {
-  return (
-    // <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
-    //   <div class="container px-4 px-lg-5">
-    //     <a class="navbar-brand" href="#page-top">
-    //       Start Bootstrap
-    //     </a>
-    //     <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-    //       <span class="navbar-toggler-icon"></span>
-    //     </button>
-    //     <div class="collapse navbar-collapse" id="navbarResponsive">
-    //       <ul class="navbar-nav ms-auto my-2 my-lg-0">
-    //         <li class="nav-item">
-    //           <a class="nav-link" href="#about">
-    //             About
-    //           </a>
-    //         </li>
-    //         <li class="nav-item">
-    //           <a class="nav-link" href="#services">
-    //             Services
-    //           </a>
-    //         </li>
-    //         <li class="nav-item">
-    //           <a class="nav-link" href="#portfolio">
-    //             Portfolio
-    //           </a>
-    //         </li>
-    //         <li class="nav-item">
-    //           <a class="nav-link" href="#contact">
-    //             Contact
-    //           </a>
-    //         </li>
-    //       </ul>
-    //     </div>
-    //   </div>
-    // </nav>
+import Container from 'react-bootstrap/Container';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+import NavDropdown from 'react-bootstrap/NavDropdown';
+import { useRef } from 'react';
 
-    <nav class="navbar navbar-expand-lg bg-about">
-      <div class="container">
-        <a class="navbar-brand link tebel-sedang  text-white" href="#">
-          AZRA
-        </a>
-        <button class="navbar-toggler mb-4" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-          <ul class="nav nav-pills">
-            <li class="nav-item">
-              <a class="nav-link link tebel-sedang text-white" href="#">
-                About &nbsp;&nbsp;
-              </a>
-            </li>
-            <li class="nav-item ">
-              <a class="nav-link link text-white tebel-sedang" href="#">
-                Projects &nbsp;&nbsp;
-              </a>
-            </li>
-            <li class="nav-item ">
-              <a class="nav-link active tebel-sedang rounded-pill bg-primary shadow" href="#">
-                Contact
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+export default function Navbaar() {
+  const linkref = useRef();
+
+  const goto = (ref) => {
+    window.scrollTo({
+      top: ref.offsetTop,
+      left: 0,
+      behavior: 'smooth',
+    });
+  };
+
+  return (
+    <Navbar className="navbar " expand="lg">
+      <Container>
+        <Navbar.Brand href="#home" className="text-white fw-bold">
+          azrayaal
+        </Navbar.Brand>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Collapse id="basic-navbar-nav">
+          <Nav className="justify-content-end ml-auto" style={{ width: '100%' }}>
+            <Nav.Link href="#about" className="text-white fw-bold">
+              About
+            </Nav.Link>
+            <Nav.Link href="#Projects" className="text-white fw-bold">
+              Projects
+            </Nav.Link>
+            <NavDropdown title={<span className="text-light my-auto">Contact</span>} className="color-light fw-bold" id="basic-nav-dropdown">
+              <NavDropdown.Item href="https://github.com/azrayaal" target="blank">
+                Github
+              </NavDropdown.Item>
+              <NavDropdown.Item href="https://www.instagram.com/azrayazid.rar/" target="blank">
+                Instagram
+              </NavDropdown.Item>
+              <NavDropdown.Item onClick={() => goto(linkref.current)} target="blank">
+                Gmail
+              </NavDropdown.Item>
+              {/* <NavDropdown.Item href="https://mail.google.com/mail/?view=cm&fs=1&to=azrayazidalkautsar@gmail.com&su=Recruitment" target="blank">
+                Gmail
+              </NavDropdown.Item> */}
+              <NavDropdown.Item href="https://wa.me/6285694368835?text=Hi%20Azra%20can%20we%20talk?" target="blank">
+                WhatsApp
+              </NavDropdown.Item>
+            </NavDropdown>
+          </Nav>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
   );
 }

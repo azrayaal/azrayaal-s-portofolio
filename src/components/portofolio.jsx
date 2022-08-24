@@ -5,6 +5,10 @@ import porto2 from '../../src/img/AdminAzrayaal.png';
 import porto3 from '../../src/img/portfolio-3.jpg';
 import porto4 from '../../src/img/portfolio-4.jpg';
 
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+
 // 700x467
 
 export default function Portofolio() {
@@ -15,8 +19,8 @@ export default function Portofolio() {
           <h3 class="text-secondary mb-0">Portfolio</h3>
           <h2 class="mb-5">Recent Projects That I Made</h2>
         </div>
-        <div class="row gx-0">
-          <div class="col-lg-6">
+        <Row class="row gx-0">
+          <Col class="col-lg-6">
             <a class="portfolio-item" href="#!">
               <div class="caption">
                 <div class="caption-content">
@@ -26,8 +30,8 @@ export default function Portofolio() {
               </div>
               <img class="img-fluid" src={porto1} alt="..." />
             </a>
-          </div>
-          <div class="col-lg-6">
+          </Col>
+          <Col class="col-lg-6">
             <a class="portfolio-item" href="https://admin-storegg-azrayaal.herokuapp.com/">
               <div class="caption">
                 <div class="caption-content">
@@ -37,8 +41,8 @@ export default function Portofolio() {
               </div>
               <img class="img-fluid porto2" src={porto2} alt="..." />
             </a>
-          </div>
-          <div class="col-lg-6">
+          </Col>
+          <Col class="col-lg-6">
             <a class="portfolio-item" href="#!">
               <div class="caption">
                 <div class="caption-content">
@@ -48,8 +52,8 @@ export default function Portofolio() {
               </div>
               <img class="img-fluid" src={porto3} alt="..." />
             </a>
-          </div>
-          <div class="col-lg-6">
+          </Col>
+          <Col class="col-lg-6">
             <a class="portfolio-item" href="#!">
               <div class="caption">
                 <div class="caption-content">
@@ -59,8 +63,8 @@ export default function Portofolio() {
               </div>
               <img class="img-fluid" src={porto4} alt="..." />
             </a>
-          </div>
-        </div>
+          </Col>
+        </Row>
       </div>
     </section>
   );

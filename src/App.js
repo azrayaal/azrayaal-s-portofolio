@@ -1,7 +1,7 @@
 import './css/App.css';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Navbar from './components/navbar';
+import Navbaar from './components/navbar';
 import Header from './components/header/header';
 // import Language from './components/language';
 import Portofolio from './components/portofolio';
@@ -10,12 +10,14 @@ import Footer from './components/footer';
 import About from './components/about/about';
 import Home from './components/home/home';
 import Porto2 from './components/project2/porto2';
+import Particlebackground from './components/react-particle/particle';
 
 function App() {
   return (
     <>
-      <Navbar />
+      <Navbaar />
       {/* <Home /> */}
+      {/* <Particlebackground /> */}
       <Header />
       <About />
       {/* <Portofolio /> */}

@@ -1,22 +1,49 @@
 import React from 'react';
+import './porto2.css';
+
+import thumbnail1 from '../../img/thumbnails/1.jpg';
+import thumbnail2 from '../../img/thumbnails/2.jpg';
+import thumbnail3 from '../../img/thumbnails/3.jpg';
+import thumbnail4 from '../../img/thumbnails/quotes-web-app.png';
 
 export default function Porto2() {
   return (
     <div id="portfolio">
+      <h1 className="text-center p-2" style={{ backgroundColor: '#ffd300' }}>
+        PROJECTS
+      </h1>
       <div class="container-fluid p-0">
         <div class="row g-0">
           <div class="col-lg-4 col-sm-6">
             <a class="portfolio-box" href="assets/img/portfolio/fullsize/1.jpg" title="Project Name">
-              <img class="img-fluid" src="assets/img/portfolio/thumbnails/1.jpg" alt="..." />
+              <img class="img-fluid" src={thumbnail1} alt="..." />
               <div class="portfolio-box-caption">
-                <div class="project-category text-white-50">Category</div>
+                <div class="project-category text-black-50">Category</div>
                 <div class="project-name">Project Name</div>
               </div>
             </a>
           </div>
           <div class="col-lg-4 col-sm-6">
             <a class="portfolio-box" href="assets/img/portfolio/fullsize/2.jpg" title="Project Name">
-              <img class="img-fluid" src="assets/img/portfolio/thumbnails/2.jpg" alt="..." />
+              <img class="img-fluid" src={thumbnail2} alt="..." />
+              <div class="portfolio-box-caption">
+                <div class="project-category text-black-50">Category</div>
+                <div class="project-name">Project Name</div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <a class="portfolio-box" href="assets/img/portfolio/fullsize/3.jpg" title="Project Name">
+              <img class="img-fluid" src={thumbnail3} alt="..." />
+              <div class="portfolio-box-caption">
+                <div class="project-category text-black-50">Category</div>
+                <div class="project-name">Project Name</div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <a class="portfolio-box" href="assets/img/portfolio/fullsize/1.jpg" title="Project Name">
+              <img class="img-fluid" src={thumbnail1} alt="..." />
               <div class="portfolio-box-caption">
                 <div class="project-category text-white-50">Category</div>
                 <div class="project-name">Project Name</div>
@@ -25,7 +52,7 @@ export default function Porto2() {
           </div>
           <div class="col-lg-4 col-sm-6">
             <a class="portfolio-box" href="assets/img/portfolio/fullsize/3.jpg" title="Project Name">
-              <img class="img-fluid" src="assets/img/portfolio/thumbnails/3.jpg" alt="..." />
+              <img class="img-fluid" src={thumbnail3} alt="..." />
               <div class="portfolio-box-caption">
                 <div class="project-category text-white-50">Category</div>
                 <div class="project-name">Project Name</div>
@@ -33,27 +60,9 @@ export default function Porto2() {
             </a>
           </div>
           <div class="col-lg-4 col-sm-6">
-            <a class="portfolio-box" href="assets/img/portfolio/fullsize/4.jpg" title="Project Name">
-              <img class="img-fluid" src="assets/img/portfolio/thumbnails/4.jpg" alt="..." />
+            <a class="portfolio-box" href="assets/img/portfolio/fullsize/2.jpg" title="Project Name">
+              <img class="img-fluid" src={thumbnail4} alt="..." />
               <div class="portfolio-box-caption">
-                <div class="project-category text-white-50">Category</div>
-                <div class="project-name">Project Name</div>
-              </div>
-            </a>
-          </div>
-          <div class="col-lg-4 col-sm-6">
-            <a class="portfolio-box" href="assets/img/portfolio/fullsize/5.jpg" title="Project Name">
-              <img class="img-fluid" src="assets/img/portfolio/thumbnails/5.jpg" alt="..." />
-              <div class="portfolio-box-caption">
-                <div class="project-category text-white-50">Category</div>
-                <div class="project-name">Project Name</div>
-              </div>
-            </a>
-          </div>
-          <div class="col-lg-4 col-sm-6">
-            <a class="portfolio-box" href="assets/img/portfolio/fullsize/6.jpg" title="Project Name">
-              <img class="img-fluid" src="assets/img/portfolio/thumbnails/6.jpg" alt="..." />
-              <div class="portfolio-box-caption p-3">
                 <div class="project-category text-white-50">Category</div>
                 <div class="project-name">Project Name</div>
               </div>
