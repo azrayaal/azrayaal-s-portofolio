@@ -41,7 +41,7 @@
 
 .img {
   width: 700px;
-  z-index: -1;
+  /* z-index: -1; */
 }
 
 .link {
@@ -92,4 +92,5 @@
 .navbar {
   background-color: #10162f;
   color: #fff;
+  z-index: 2;
 }

@@ -1,6 +1,7 @@
 import React, { useRef } from 'react';
 // import '../map.css';
 import emailjs from '@emailjs/browser';
+import './map.css';
 
 export default function Map(props) {
   const form = useRef();
@@ -21,7 +22,7 @@ export default function Map(props) {
 
   return (
     <>
-      <section class="page-section py-4 " id="contact" ref={props.linkRef} style={{ backgroundColor: '#7aa3b3' }}>
+      <section class="page-section py-4 " id="contact" ref={props.linkRef}>
         <div class="container px-4 px-lg-5">
           <div class=" text-center py-2">
             <h2 class="mt-0  fw-bold">Let's Get In Touch!</h2>

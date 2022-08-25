@@ -13,7 +13,7 @@ function App() {
   return (
     <>
       <Navbaar />
-      {/* <Particlebackground /> */}
+      <Particlebackground />
       <Header />
       <About />
       <Porto2 />

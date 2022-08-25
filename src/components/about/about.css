@@ -5,6 +5,8 @@
 .content-section {
   padding-top: 3rem;
   padding-bottom: 3rem;
+  z-index: 2;
+  position: relative;
 }
 
 .content-section-heading h2,

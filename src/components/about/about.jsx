@@ -40,9 +40,11 @@ export default function About() {
               technology, especially computer mathematics, and quantum computers My first program started by calculating age and from there I began to get more interested and make one of my new hobbies. At first it was difficult for me, it
               starts with just learning basic algorithms up to complicated counts, and utilizing quantum computer theory.
             </p>
-            <button class=" mb-5 lead fw-semibold buttonYellowAbout" href="#services">
-              Download CV
-            </button>
+            <a href="">
+              <button class=" mb-5 lead fw-semibold buttonYellowAbout" onclick="window.open('file.doc')" type="submit" href="#services">
+                Download CV
+              </button>
+            </a>
           </Col>
           <Col class="" xs={12} lg={6}>
             {/* <p className="pb-3 text-justify lead fw-semibold">I learned about web developing since march 2021, and continued to use Bootstrap and Tailwind to make website, followed learn to using stack web such as MERN at December 2022</p> */}

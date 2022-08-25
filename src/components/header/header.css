@@ -26,3 +26,20 @@ button {
     padding-top: 0px !important;
   }
 }
+
+h1 {
+  position: relative;
+  z-index: 2;
+}
+h3 {
+  position: relative;
+  z-index: 2;
+}
+button {
+  position: relative;
+  z-index: 2;
+}
+img {
+  position: relative;
+  z-index: 2;
+}
