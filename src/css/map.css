@@ -3,13 +3,12 @@
   background: linear-gradient(to right, #0062e6, #33aeff);
 } */
 
-.bg-image {
+/* .bg-image {
   background-image: url('https://source.unsplash.com/kKvQJ6rK6S4/660x1000');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-}
-
+} */
 
 /*!
  * Bootstrap v4.3.1 (https://getbootstrap.com/)
@@ -17,7 +16,7 @@
  * Copyright 2011-2019 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
-:root {
+/* :root {
   --blue: #007bff;
   --indigo: #6610f2;
   --purple: #6f42c1;
@@ -8190,33 +8189,33 @@ h1, h2, h3, h4, h5,
 .img {
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center center; }
+  background-position: center center; } */
 
-.form-control {
+/* .form-control {
   height: 44px;
   background: #fff;
   color: rgba(0, 0, 0, 0.8);
   font-size: 14px;
   border-radius: 2px;
   -webkit-box-shadow: none !important;
-  box-shadow: none !important;
-  border: none; }
-  .form-control::-webkit-input-placeholder {
-    /* Chrome/Opera/Safari */
-    color: rgba(0, 0, 0, 0.3) !important; }
-  .form-control::-moz-placeholder {
-    /* Firefox 19+ */
-    color: rgba(0, 0, 0, 0.3) !important; }
-  .form-control:-ms-input-placeholder {
-    /* IE 0+ */
-    color: rgba(0, 0, 0, 0.3) !important; }
-  .form-control:-moz-placeholder {
-    /* Firefox 18- */
-    color: rgba(0, 0, 0, 0.3) !important; }
+  box-shadow: none !important; */
+/* border: none; } */
+/* .form-control::-webkit-input-placeholder { */
+/* Chrome/Opera/Safari */
+/* color: rgba(0, 0, 0, 0.3) !important; }
+  .form-control::-moz-placeholder { */
+/* Firefox 19+ */
+/* color: rgba(0, 0, 0, 0.3) !important; }
+  .form-control:-ms-input-placeholder { */
+/* IE 0+ */
+/* color: rgba(0, 0, 0, 0.3) !important; }
+  .form-control:-moz-placeholder { */
+/* Firefox 18- */
+/* color: rgba(0, 0, 0, 0.3) !important; }
   .form-control:focus, .form-control:active {
-    border-color: #2553b8 !important; }
+    border-color: #2553b8 !important; } */
 
-textarea.form-control {
+/* textarea.form-control {
   height: inherit !important; }
 
 .wrapper {
@@ -8329,4 +8328,4 @@ textarea.form-control {
   display: none;
   font-size: 16px;
   font-weight: 500;
-  color: #2553b8; }
+  color: #2553b8; } */

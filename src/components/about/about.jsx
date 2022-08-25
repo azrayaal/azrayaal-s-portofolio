@@ -6,15 +6,6 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
-// import html from '../../src/img/html.png';
-// import css from '../../src/img/css-3.png';
-// import bootstrap from '../../src/img/bootstrap.png';
-// import javascript from '../../src/img/js.png';
-// import tailwind from '../../src/img/tailwind.png';
-// import mongodb from '../../src/img/mongodb-removebg-preview.png';
-// import expressjs from '../../src/img/express.png';
-// import reactjs from '../../src/img/structure.png';
-// import nodejs from '../../src/img/nodejs.png';
 import bee from '../../img/Untitled design (2).png';
 
 // function Language(props) {

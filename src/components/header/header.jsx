@@ -15,7 +15,7 @@ export default function Header() {
         <Row className="g-5 pt-5 ilangpadding">
           <Col xs={12} md={6} className="text">
             <h1 class="pb-1">Hey, I'm</h1>
-            <h1 style={{ color: '#ffd300', position: 'relative', zIndex: '2' }} className="fw-bold">
+            <h1 style={{ color: '#ffd300' }} className="fw-bold">
               Azra Yazid
             </h1>
             <h3 class="pb-5">
